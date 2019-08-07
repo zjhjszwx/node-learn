@@ -19,6 +19,7 @@
   "homepage": "https://github.com/zjhjszwx/node-learn#readme",
   "devDependencies": {
     "cheerio": "^1.0.0-rc.3",
+    "request": "^2.88.0",
     "superagent": "^5.1.0"
   }
 }
