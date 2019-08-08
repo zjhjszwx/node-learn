@@ -1,4 +1,3 @@
-const http = require('http');
 const sp = require('superagent');
 const fs = require('fs');
 const cheerio = require('cheerio');
@@ -46,7 +45,7 @@ function downLoad(url) {
                 //写入html
                 let arr = i.split('/');
                 let htmlName = arr[arr.length - 1]
-                let name = './html/' + arr[arr.length - 1];
+                // let name = './html/' + arr[arr.length - 1];
                 // writeFile(name, page);
                 //写入img
                 img_src.forEach(i => {
@@ -57,8 +56,9 @@ function downLoad(url) {
                         // writeFile(filename,null,(err)=>{
                         //     if(err) throw err
                         // });
-                        console.log(filename)
-                        request(res).pipe(fs.createWriteStream(filename));
+                        // console.log(filename)
+                        console.log(typeof request(res))
+                        // request(res).pipe(fs.createWriteStream(filename));
                     }
                 });
             } else {
